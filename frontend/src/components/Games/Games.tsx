@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { Filter, Game, GamesResponse } from "@/types/types";
 import GameCard from "@/components/GameCard/GameCard";
-import styles from "./games.module.css";
+import styles from "./Games.module.css";
 import Filters from "../Filters/Filters";
 
 type Props = {

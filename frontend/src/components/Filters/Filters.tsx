@@ -154,10 +154,10 @@ const Filters = ({ onFilter, providers, groups, gamesCount }: Props) => {
           {!isMobile ? (
             <input
               type="range"
+              className={styles.slider}
               min="1"
               max={"4"}
               value={cardsPerRow}
-              className="slider"
               id="cardsPerRowRange"
               onChange={(e) => setCardsPerRow(Number(e.target.value))}
             />
