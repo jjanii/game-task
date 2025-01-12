@@ -16,7 +16,7 @@ export type Game = {
   provider: number;
   cover: string;
   coverLarge: string;
-  date: string; 
+  date: string;
 };
 
 export type Provider = {
@@ -28,7 +28,7 @@ export type Provider = {
 export type Group = {
   id: number;
   name: string;
-  games: number[]; 
+  games: number[];
 };
 
 export type GamesResponse = {

@@ -41,24 +41,28 @@ const Login = () => {
   return (
     <div className={styles.container}>
       <Logo />
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          onKeyDown={handleKeyDown} // Add this
-          className={styles.input}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          onKeyDown={handleKeyDown} // Add this
-          className={styles.input}
-        />
-        {error && <div className={styles.error}>{error}</div>}
-      <button disabled={!username || !password} className={styles.button} onClick={handleLogin}>
+      <input
+        type="text"
+        placeholder="Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        onKeyDown={handleKeyDown} // Add this
+        className={styles.input}
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        onKeyDown={handleKeyDown} // Add this
+        className={styles.input}
+      />
+      {error && <div className={styles.error}>{error}</div>}
+      <button
+        disabled={!username || !password}
+        className={styles.button}
+        onClick={handleLogin}
+      >
         Login
       </button>
     </div>
