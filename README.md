@@ -74,6 +74,7 @@ npm install
 ## Project Structure
 
 ### Frontend (Next.js)
+- **api/**: Contains the API requests for login, logout and fetching the games.
 - **pages/**: Contains the Next.js pages (e.g., `games.tsx` and `index.tsx`).
 - **components/**: Reusable UI components (e.g., `GameCard`, `Filters`). The CSS modules are in the same directory as the component using it.
 
