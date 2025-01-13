@@ -61,7 +61,7 @@ npm install
 ### Start the Frontend
 1. Navigate to the `client` directory:
    ```bash
-   cd client
+   cd frontend
    ```
 2. Start the frontend:
    ```bash
